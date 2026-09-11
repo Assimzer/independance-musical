@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Indépendance Musicale — Playlist 100% FR</title>
+
+<!-- ============================================================
+     À REMPLIR AVANT DE METTRE EN LIGNE :
+     1) Ton Meta Pixel ID ligne ~24 (remplace TON_PIXEL_ID)
+     2) Ton Microsoft Clarity ID ligne ~33 (remplace TON_CLARITY_ID)
+        -> gratuit sur https://clarity.microsoft.com
+     3) Tes vrais liens dans l'objet LINKS ligne ~200
+     ============================================================ -->
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1583887703286550');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1583887703286550&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "yg3r18djgv");
+</script>
+<!-- End Microsoft Clarity -->
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+  :root{
+    --bg:#0a0d0a;
+    --surface:#14171388;
+    --surface-hover:#1c211c;
+    --text:#f2f0ea;
+    --muted:#9aa89a;
+    --green:#4ade60;
+    --green-dim:#3a7a45;
+    --border:#2a332a;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+
+  body{
+    background:
+      radial-gradient(ellipse 90% 55% at 50% 100%, rgba(74,222,96,0.16), transparent 70%),
+      radial-gradient(ellipse 70% 40% at 50% 0%, rgba(74,222,96,0.08), transparent 70%),
+      var(--bg);
+    color:var(--text);
+    font-family:'Inter', system-ui, sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    padding:48px 18px 80px;
+    line-height:1.5;
+  }
+
+  main{
+    width:100%;
+    max-width:460px;
+  }
+
+  .profile{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    margin-bottom:22px;
+  }
+
+  .avatar{
+    width:84px;
+    height:84px;
+    border-radius:50%;
+    overflow:hidden;
+    background:#111;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:16px;
+    border:1px solid var(--border);
+  }
+
+  .avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+
+  h1{
+    font-family:'Baloo 2', sans-serif;
+    font-weight:700;
+    font-size:26px;
+    color:var(--green);
+    line-height:1.15;
+  }
+
+  .tagline{
+    font-family:'Baloo 2', sans-serif;
+    font-weight:600;
+    color:var(--green);
+    opacity:0.85;
+    font-size:14px;
+    margin-top:6px;
+    max-width:300px;
+  }
+
+  .socials{
+    display:flex;
+    gap:14px;
+    justify-content:center;
+    margin-top:18px;
+  }
+
+  .social-icon{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    border:1.5px solid var(--green);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--green);
+    text-decoration:none;
+    font-size:17px;
+    transition:background .15s ease;
+  }
+
+  .social-icon:hover{
+    background:rgba(74,222,96,0.12);
+  }
+
+  .section-label{
+    font-family:'Baloo 2', sans-serif;
+    font-weight:700;
+    font-size:15px;
+    color:var(--green);
+    text-align:center;
+    margin:26px 0 14px;
+  }
+
+  .link-list{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .link-card{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    background:var(--surface);
+    backdrop-filter:blur(2px);
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:10px 14px;
+    text-decoration:none;
+    color:var(--text);
+    transition:border-color .15s ease, background .15s ease, transform .1s ease;
+  }
+
+  .link-card:hover{
+    background:var(--surface-hover);
+    border-color:var(--green-dim);
+  }
+
+  .link-card:active{
+    transform:scale(0.98);
+  }
+
+  .link-cover{
+    width:44px;
+    height:44px;
+    border-radius:8px;
+    flex-shrink:0;
+    object-fit:cover;
+    background:#1c211c;
+  }
+
+  .link-body{
+    flex:1;
+    min-width:0;
+  }
+
+  .link-title{
+    font-weight:700;
+    font-size:14.5px;
+  }
+
+  .link-desc{
+    color:var(--muted);
+    font-size:12px;
+    margin-top:2px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+
+  .link-actions{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    flex-shrink:0;
+  }
+
+  .icon-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    color:var(--muted);
+    background:transparent;
+    border:none;
+    cursor:pointer;
+    text-decoration:none;
+    transition:background .15s ease, color .15s ease;
+  }
+
+  .icon-btn:hover{
+    background:rgba(74,222,96,0.12);
+    color:var(--green);
+  }
+
+  .icon-btn.expanded{
+    color:var(--green);
+    transform:rotate(180deg);
+  }
+
+  .player-wrap{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .25s ease;
+  }
+
+  .player-wrap.open{
+    max-height:400px;
+    margin-top:8px;
+  }
+
+  .player-wrap iframe{
+    width:100%;
+    border-radius:12px;
+    border:1px solid var(--border);
+    display:block;
+  }
+
+  .link-menu{
+    color:var(--muted);
+    font-size:16px;
+    flex-shrink:0;
+    letter-spacing:1px;
+  }
+
+  footer{
+    text-align:center;
+    color:var(--muted);
+    font-size:12px;
+    margin-top:44px;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .link-card{transition:none;}
+  }
+</style>
+</head>
+<body>
+
+<main>
+  <div class="profile">
+    <div class="avatar">
+      <img src="https://ugc.production.linktr.ee/z4V5KFWiS9WJiPskGylY_0LhjTdZtY57TdKWV" alt="Indépendance Musicale">
+    </div>
+    <h1>Indépendance musicale</h1>
+    <p class="tagline">Playlist 100% FR Pour les puristes du rap</p>
+    <div class="socials" id="social-list"></div>
+  </div>
+
+  <p class="section-label">Spotify</p>
+  <ul class="link-list" id="playlist-list"></ul>
+
+  <footer>Indépendance Musicale</footer>
+</main>
+
+<script>
+  // ============================================================
+  // REMPLACE les liens ci-dessous par tes vraies URLs (copie-colle
+  // depuis l'édition de ta page Linktree). Le title/desc s'affiche
+  // sur la page, "url" est le lien de destination.
+  // ============================================================
+
+  const PLAYLISTS = [
+    { title: "RAP FR ÉNERVÉ 2026", desc: "Playlist · kick | punchline | rapfr | rap fr", cover: "https://ugc.production.linktr.ee/fb1c7bb7-1519-417d-845f-df5d350ac2f3_ab67706c0000da8442b99a47b0a2746076f7948d.jpeg", url: "https://open.spotify.com/playlist/61G8r9QrbDORlEfe9EB6Pc" },
+    { title: "RAP LOVE FR 💞", desc: "Playlist · 134 items · 6.9K saves", cover: "https://ugc.production.linktr.ee/iHCb89beTu3XU25L35QU_convert.jpg", url: "https://open.spotify.com/playlist/7i5yMpg2Rp44B4Jovm4BBm" },
+    { title: "Rap Musculation 💪", desc: "Playlist", cover: "https://ugc.production.linktr.ee/Ztv26cA0RoyjbNvSDf2N_convert.jpg", url: "https://open.spotify.com/playlist/0hCVXfND5xuQtPoQDTCRkQ" },
+    { title: "RAP TIKTOK 2026 🎶", desc: "Playlist · les derniers hits tendance", cover: "https://ugc.production.linktr.ee/8c1de640-da4d-4ee1-a2de-9cdd301ced73_ab67706c0000da84ed636d1f5c49f02382b81697.jpeg", url: "https://open.spotify.com/playlist/0LINK1RUkVbf9kVYcXkpR0" },
+    { title: "RAP ETE 2026", desc: "Playlist", cover: "https://ugc.production.linktr.ee/9c333633-2ae7-43d0-9737-58dc976d782c_ab67706c0000da84852c4ec347ae5db54936094c.jpeg", url: "https://open.spotify.com/playlist/1lq0Xv4ry4rJwoMZc2DHzT" },
+    { title: "GOOD VIBES RAP", desc: "Playlist · 119 items · 354 saves", cover: "https://ugc.production.linktr.ee/Ttgmk00GSRqVKE8x8M5m_convert.jpg", url: "https://open.spotify.com/playlist/5rLZrA90f57HwJJ7IzANoe" },
+    { title: "RAP SOIRÉE 🍾🎉", desc: "Playlist · soirée | party | zumba", cover: "", url: "https://open.spotify.com/playlist/6AuOQd2OmheyMINZhjDYs0" },
+    { title: "Tiktok 👇", desc: "spotiFAN · 13.3K Followers", cover: "", url: "https://www.tiktok.com/@spotifan2" },
+  ];
+
+  const SOCIALS = [
+    { title: "Instagram", icon: "instagram", url: "https://www.instagram.com/independance_musicale" },
+    { title: "TikTok", icon: "tiktok", url: "https://www.tiktok.com/@spotifan2" },
+    { title: "Apple Music", icon: "music", url: "#" },
+  ];
+
+  const ICONS = {
+    instagram: '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>',
+    tiktok: '<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82c-1-.87-1.6-2.14-1.6-3.54h-3.4v13.6c0 1.53-1.24 2.77-2.77 2.77a2.77 2.77 0 0 1 0-5.54c.27 0 .53.04.77.11V9.7a6.2 6.2 0 0 0-.77-.05 6.24 6.24 0 1 0 6.24 6.24V9.03a9.6 9.6 0 0 0 5.13 1.48V7.11c-1.34 0-2.62-.47-3.6-1.29z"/></svg>',
+    music: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>'
+  };
+
+  // --- rendu + tracking, pas besoin d'y toucher ---
+
+  function trackClick(name){
+    if (window.fbq) {
+      fbq('track', 'Lead', { content_name: name });
+    }
+  }
+
+  function getSpotifyPlaylistId(url){
+    const m = url.match(/playlist\/([a-zA-Z0-9]+)/);
+    return m ? m[1] : null;
+  }
+
+  function buildPlaylistCard(item){
+    const li = document.createElement('li');
+    const spotifyId = getSpotifyPlaylistId(item.url);
+
+    const row = document.createElement('div');
+    row.className = 'link-card';
+    row.style.cursor = spotifyId ? 'pointer' : 'default';
+
+    const img = document.createElement('img');
+    img.className = 'link-cover';
+    img.src = item.cover || 'https://ugc.production.linktr.ee/z4V5KFWiS9WJiPskGylY_0LhjTdZtY57TdKWV';
+    img.alt = item.title;
+    row.appendChild(img);
+
+    const body = document.createElement('div');
+    body.className = 'link-body';
+
+    const titleEl = document.createElement('div');
+    titleEl.className = 'link-title';
+    titleEl.textContent = item.title;
+    body.appendChild(titleEl);
+
+    if (item.desc) {
+      const descEl = document.createElement('div');
+      descEl.className = 'link-desc';
+      descEl.textContent = item.desc;
+      body.appendChild(descEl);
+    }
+    row.appendChild(body);
+
+    const actions = document.createElement('div');
+    actions.className = 'link-actions';
+
+    // Lien externe vers Spotify (ouvre toujours dans un nouvel onglet)
+    const openLink = document.createElement('a');
+    openLink.className = 'icon-btn';
+    openLink.href = item.url;
+    openLink.target = '_blank';
+    openLink.rel = 'noopener';
+    openLink.title = 'Ouvrir dans Spotify';
+    openLink.innerHTML = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>';
+    openLink.addEventListener('click', function(e){
+      e.stopPropagation();
+      trackClick(item.title);
+    });
+    actions.appendChild(openLink);
+
+    let toggleBtn = null;
+    if (spotifyId) {
+      toggleBtn = document.createElement('button');
+      toggleBtn.className = 'icon-btn';
+      toggleBtn.title = 'Écouter ici';
+      toggleBtn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>';
+      actions.appendChild(toggleBtn);
+    }
+
+    row.appendChild(actions);
+    li.appendChild(row);
+
+    if (spotifyId) {
+      const playerWrap = document.createElement('div');
+      playerWrap.className = 'player-wrap';
+      li.appendChild(playerWrap);
+
+      let loaded = false;
+      function toggle(){
+        const isOpen = playerWrap.classList.toggle('open');
+        toggleBtn.classList.toggle('expanded', isOpen);
+        if (isOpen && !loaded) {
+          const iframe = document.createElement('iframe');
+          iframe.src = `https://open.spotify.com/embed/playlist/${spotifyId}?utm_source=generator&theme=0`;
+          iframe.height = '352';
+          iframe.frameBorder = '0';
+          iframe.allow = 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture';
+          iframe.loading = 'lazy';
+          playerWrap.appendChild(iframe);
+          loaded = true;
+        }
+        if (isOpen) trackClick(item.title + ' (lecteur)');
+      }
+      row.addEventListener('click', function(e){
+        if (e.target.closest('.icon-btn') && !e.target.closest('button.icon-btn')) return;
+        toggle();
+      });
+    }
+
+    return li;
+  }
+
+  function buildSocialIcon(item){
+    const a = document.createElement('a');
+    a.className = 'social-icon';
+    a.href = item.url;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.innerHTML = ICONS[item.icon] || '';
+    a.addEventListener('click', function(){
+      trackClick(item.title);
+    });
+    return a;
+  }
+
+  const playlistList = document.getElementById('playlist-list');
+  PLAYLISTS.forEach(p => playlistList.appendChild(buildPlaylistCard(p)));
+
+  const socialList = document.getElementById('social-list');
+  SOCIALS.forEach(s => socialList.appendChild(buildSocialIcon(s)));
+</script>
+
+</body>
+</html>
