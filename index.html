@@ -332,10 +332,19 @@ src="https://www.facebook.com/tr?id=1583887703286550&ev=PageView&noscript=1"
 
   // --- rendu + tracking, pas besoin d'y toucher ---
 
-  function trackClick(name){
-    if (window.fbq) {
-      fbq('track', 'Lead', { content_name: name });
-    }
+  function trackLead(name){
+    // Intention forte : clic vers Spotify externe
+    if (window.fbq) fbq('track', 'Lead', { content_name: name });
+  }
+
+  function trackViewContent(name){
+    // Intérêt : ouverture du lecteur intégré (regarde sans forcément sortir)
+    if (window.fbq) fbq('track', 'ViewContent', { content_name: name });
+  }
+
+  function trackContact(name){
+    // Intention sociale : clic vers Instagram/TikTok/Apple Music
+    if (window.fbq) fbq('track', 'Contact', { content_name: name });
   }
 
   function getSpotifyPlaylistId(url){
@@ -386,7 +395,7 @@ src="https://www.facebook.com/tr?id=1583887703286550&ev=PageView&noscript=1"
     openLink.innerHTML = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>';
     openLink.addEventListener('click', function(e){
       e.stopPropagation();
-      trackClick(item.title);
+      trackLead(item.title);
     });
     actions.appendChild(openLink);
 
@@ -421,7 +430,7 @@ src="https://www.facebook.com/tr?id=1583887703286550&ev=PageView&noscript=1"
           playerWrap.appendChild(iframe);
           loaded = true;
         }
-        if (isOpen) trackClick(item.title + ' (lecteur)');
+        if (isOpen) trackViewContent(item.title);
       }
       row.addEventListener('click', function(e){
         if (e.target.closest('.icon-btn') && !e.target.closest('button.icon-btn')) return;
@@ -440,7 +449,7 @@ src="https://www.facebook.com/tr?id=1583887703286550&ev=PageView&noscript=1"
     a.rel = 'noopener';
     a.innerHTML = ICONS[item.icon] || '';
     a.addEventListener('click', function(){
-      trackClick(item.title);
+      trackContact(item.title);
     });
     return a;
   }
